@@ -2,9 +2,10 @@
   "name": "tailwindcss",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify"
   },
   "keywords": [],
   "author": "",
